@@ -60,7 +60,7 @@ const SignUp = () => {
         }
 
         try {
-            const response = await axios.post('http://localhost:5000/api/v1/user/addUser', {
+            const response = await axios.post('https://userloginform-server.onrender.com/api/v1/user/addUser', {
                 email: signUpFormData.email,
                 password: signUpFormData.password
             });
